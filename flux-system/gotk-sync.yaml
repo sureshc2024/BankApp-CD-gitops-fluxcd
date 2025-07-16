@@ -21,7 +21,7 @@ metadata:
   namespace: flux-system
 spec:
   suspend: true
-  interval: 10m0s
+  interval: 5m0s
   path: ./
   prune: true
   sourceRef:
