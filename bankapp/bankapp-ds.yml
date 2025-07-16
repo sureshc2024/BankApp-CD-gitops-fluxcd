@@ -6,8 +6,8 @@ kind: Deployment
 metadata:
   name: bankapp
   namespace: bankapp-service
-  annotations:
-    fluxcd.io/ignore: "true"
+  #annotations:
+    #fluxcd.io/ignore: "true"
 spec:
   replicas: 2
   revisionHistoryLimit: 1
@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: bankapp
-        image: sureshc2024/bankapp:latest
+        image: sureshc2024/bankapp:V1
         ports:
         - containerPort: 8080
         env:
@@ -38,8 +38,8 @@ kind: Service
 metadata:
   name: bankapp-service
   namespace: bankapp-service
-  annotations:
-    fluxcd.io/ignore: "true"
+  #annotations:
+    #fluxcd.io/ignore: "true"
 spec:
   type: ClusterIP
   ports:
