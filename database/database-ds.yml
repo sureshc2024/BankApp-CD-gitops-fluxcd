@@ -5,8 +5,8 @@ kind: Deployment
 metadata:
   name: mysql
   namespace: bankapp-service
-  annotations:
-    fluxcd.io/ignore: "true"
+  #annotations:
+    #fluxcd.io/ignore: "true"
 spec:
   selector:
     matchLabels:
@@ -36,8 +36,8 @@ kind: Service
 metadata:
   name: mysql-service
   namespace: bankapp-service
-  annotations:
-    fluxcd.io/ignore: "true"
+  #annotations:
+    #fluxcd.io/ignore: "true"
 spec:
   ports:
   - port: 3306
