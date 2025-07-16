@@ -10,6 +10,7 @@ metadata:
     fluxcd.io/ignore: "true"
 spec:
   replicas: 2
+  suspend: true
   revisionHistoryLimit: 1
   selector:
     matchLabels:
@@ -42,6 +43,7 @@ metadata:
     fluxcd.io/ignore: "true"
 spec:
   type: ClusterIP
+  suspend: true
   ports:
   - port: 80
     targetPort: 8080
