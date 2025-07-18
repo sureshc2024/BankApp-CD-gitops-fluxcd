@@ -7,7 +7,6 @@ metadata:
 spec:
   interval: 24h0m0s
   suspend: true
-  path: ./kustomize
   prune: true
   retryInterval: 2m0s
   sourceRef:
