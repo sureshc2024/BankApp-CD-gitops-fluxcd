@@ -9,7 +9,7 @@ metadata:
   annotations:
     kustomize.toolkit.fluxcd.io/suspend: "true"
 spec:
-  replicas: 1
+  replicas: 2
   suspend: true
   revisionHistoryLimit: 1
   selector:
