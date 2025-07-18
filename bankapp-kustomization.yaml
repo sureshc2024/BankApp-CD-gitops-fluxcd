@@ -11,7 +11,7 @@ spec:
   retryInterval: 2m0s
   sourceRef:
     kind: GitRepository
-    name: podinfo
-  targetNamespace: default
+    name: bankapp
+  targetNamespace: bankapp-service
   timeout: 3m0s
   wait: true
