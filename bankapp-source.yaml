@@ -6,6 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 24h0m0s
+  suspend: true
   ref:
     branch: main
   url: https://github.com/sureshc2024/BankApp-CD-gitops-fluxcd.git
