@@ -5,6 +5,8 @@ kind: GitRepository
 metadata:
   name: flux-system
   namespace: flux-system
+  annotations:
+    kustomize.toolkit.fluxcd.io/suspend: "true"
 spec:
   suspend: true
   interval: 24h
@@ -19,6 +21,8 @@ kind: Kustomization
 metadata:
   name: flux-system
   namespace: flux-system
+  annotations:
+    kustomize.toolkit.fluxcd.io/suspend: "true"
 spec:
   suspend: true
   interval: 24h
