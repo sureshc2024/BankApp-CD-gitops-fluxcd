@@ -6,7 +6,7 @@ metadata:
   name: mysql
   namespace: bankapp-service
   annotations:
-    fluxcd.io/ignore: "true"
+    kustomize.toolkit.fluxcd.io/suspend: "true"
 spec:
   suspend: true 
   selector:
@@ -38,7 +38,7 @@ metadata:
   name: mysql-service
   namespace: bankapp-service
   annotations:
-    fluxcd.io/ignore: "true"
+    kustomize.toolkit.fluxcd.io/suspend: "true"
 spec:
   suspend: true
   ports:
